@@ -1,0 +1,28 @@
+.home.controller
+  h1 DNS Propagation Monitor
+
+  div(ng-repeat="target in ::targets track by $index")
+    h4 {{ ::target.label }} ({{ ::target.rrtype }} - {{ ::target.host }})
+
+    .text-right
+      button.btn.btn-primary(type="button" ng-click="fetchAll()")
+        i.glyphicon.glyphicon-refresh
+        | &nbsp;
+        | Refresh
+
+    ul.list-group
+      li.list-group-item.clearfix(ng-repeat="server in ::servers track by $index")
+        p.pull-left
+          | {{ ::server.label }}
+          | &nbsp;
+          span(ng-class="{ 'text-success': results[getKey(target, server)].answers, 'text-danger': !results[getKey(target, server)].answers}")
+            i.glyphicon(ng-class="{ 'glyphicon-ok': results[getKey(target, server)].answers, 'glyphicon-remove': !results[getKey(target, server)].answers}")
+          br
+          small {{ ::server.host }}
+
+
+        p.pull-right
+          | {{ results[getKey(target, server)].answers[0] || results[getKey(target, server)].error }}
+          br
+          span(ng-if="results[getKey(target, server)].timestamp")
+            | Updated on {{ results[getKey(target, server)].timestamp | dateFormat }}

@@ -1,0 +1,57 @@
+{
+  "name": "dns-propagation-monitor-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --bail --progress",
+    "watch": "webpack --progress --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooyoul/dns-propagation-monitor.git"
+  },
+  "keywords": [
+    "dns",
+    "propagation",
+    "monitor"
+  ],
+  "author": "MooYeol Prescott Lee <mooyoul@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mooyoul/dns-propagation-monitor/issues"
+  },
+  "homepage": "https://github.com/mooyoul/dns-propagation-monitor#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.4.0",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-strict-mode": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.27.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.10.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "imports-loader": "^0.7.1",
+    "jade": "^1.11.0",
+    "jade-html-loader": "0.0.3",
+    "ng-annotate-loader": "^0.2.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-resource": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
+    "bluebird": "^3.5.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "moment": "^2.17.1"
+  }
+}

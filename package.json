@@ -1,0 +1,30 @@
+{
+  "name": "dns-propagation-monitor",
+  "version": "1.0.0",
+  "description": "dns propagation monitoring utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooyoul/dns-propagation-monitor.git"
+  },
+  "keywords": [
+    "dns",
+    "propagation",
+    "monitor"
+  ],
+  "author": "MooYeol Prescott Lee <mooyoul@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mooyoul/dns-propagation-monitor/issues"
+  },
+  "homepage": "https://github.com/mooyoul/dns-propagation-monitor#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "native-dns": "^0.7.0"
+  }
+}
